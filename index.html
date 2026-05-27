@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorsetModa 2026 - Rc Boutique & Unbroken Trends</title>
+    
+    <!-- Google Fonts: Elegant Playfair Display for headings & Inter for structure -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        corset: {
+                            light: '#FFF0F3',    /* Fondo ultra suave */
+                            primary: '#FFC5D3',  /* Rosa Pastel Claro de marca */
+                            mid: '#F3A3B4',      /* Rosa de transición */
+                            dark: '#3D252A',     /* Contraste profundo y elegante */
+                            accent: '#2D7F82',   /* Transformative Teal - Color del Año 2026 */
+                            accentLight: '#E8F4F5'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #FFF0F3;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #FFC5D3;
+            border-radius: 10px;
+        }
+        .bg-pattern {
+            background-color: #FFF0F3;
+            background-image: radial-gradient(#FFC5D3 0.8px, transparent 0.8px), radial-gradient(#FFC5D3 0.8px, #FFF0F3 0.8px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+        }
+        .transition-all-300 {
+            transition: all 0.30s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-corset-light text-corset-dark font-sans antialiased custom-scrollbar">
+
+    <!-- Top Banner: 2026 trends context -->
+    <div class="bg-corset-dark text-corset-light py-2 px-4 text-center text-xs tracking-widest uppercase font-semibold">
+        <span class="inline-block animate-pulse mr-2">✦</span> ENVÍOS GRATIS Y PAGOS CONTRA ENTREGA EN TODA COLOMBIA <span class="inline-block animate-pulse ml-2">✦</span>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-corset-primary/30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex flex-col">
+                <span class="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-corset-dark flex items-center gap-2">
+                    RC Boutique <span class="text-xs bg-corset-accent text-white px-2 py-0.5 rounded-full font-sans tracking-normal font-normal">2026</span>
+                </span>
+                <span class="text-[9px] uppercase tracking-[0.25em] text-corset-mid font-bold">ALTA COSTURA PERSONALIZADA</span>
+            </a>
+
+            <!-- Navigation Links (E-commerce Style) -->
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
+                <a href="#mision-vision" class="hover:text-corset-mid transition-all-300 border-b-2 border-transparent hover:border-corset-primary py-1">Nosotros</a>
+                <a href="#medidas-tallas" class="hover:text-corset-mid transition-all-300 border-b-2 border-transparent hover:border-corset-primary py-1">Medidas y Guía</a>
+                <a href="#empoderamiento" class="hover:text-corset-mid transition-all-300 border-b-2 border-transparent hover:border-corset-primary py-1">Inspiración</a>
+                <a href="#agendamiento" class="hover:text-corset-mid transition-all-300 border-b-2 border-transparent hover:border-corset-primary py-1">Cita a Medida</a>
+                <a href="#contacto" class="hover:text-corset-mid transition-all-300 border-b-2 border-transparent hover:border-corset-primary py-1">Contacto</a>
+            </nav>
+
+            <!-- Secondary Actions -->
+            <div class="flex items-center space-x-4">
+                <a href="#agendamiento" class="hidden sm:inline-flex items-center justify-center px-4 py-2 border border-transparent text-xs font-semibold uppercase tracking-wider rounded-full shadow-sm text-white bg-corset-accent hover:bg-corset-accent/90 transition-all-300">
+                    <i class="fa-regular fa-calendar-check mr-2"></i> Agendar Cita
+                </a>
+                <div class="relative">
+                    <button class="text-corset-dark hover:text-corset-mid p-2 relative">
+                        <i class="fa-solid fa-bag-shopping text-xl"></i>
+                        <span class="absolute -top-1 -right-1 bg-corset-accent text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Intro Showcase -->
+    <section class="relative bg-white overflow-hidden py-12 lg:py-20 border-b border-corset-primary/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Copy & Presentation -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-corset-accentLight rounded-full text-corset-accent text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-star text-[10px]"></i> Colección Romance Dual 2026
+                    </div>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-corset-dark leading-tight">
+                        La revolución del <span class="italic text-corset-mid block sm:inline">ajuste perfecto</span> y la silueta con propósito.
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed">
+                        En el 2026, la moda le dice adiós al oversize absoluto. Es momento de celebrar el retorno del romance dual: la delicadeza etérea frente a la fuerza oscura. Diseñamos corsets auténticos con <strong>varillas de acero espiral</strong> a tus medidas exactas.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#agendamiento" class="inline-flex items-center justify-center px-8 py-4 bg-corset-dark hover:bg-corset-dark/90 text-white font-semibold uppercase tracking-wider rounded-xl shadow-lg shadow-corset-dark/20 transition-all-300">
+                            Diseñar Mi Corset Real
+                        </a>
+                        <a href="#medidas-tallas" class="inline-flex items-center justify-center px-8 py-4 bg-corset-light hover:bg-corset-primary/30 text-corset-dark font-semibold uppercase tracking-wider rounded-xl border border-corset-primary transition-all-300">
+                            Calcular Mi Talla
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Premium SVG Illustration of a Corset with modern overlay tags -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-corset-primary/20 to-corset-accent/10 rounded-3xl transform rotate-3 scale-95 -z-10"></div>
+                    <div class="bg-white border-2 border-corset-primary/40 rounded-3xl p-6 sm:p-8 shadow-2xl relative w-full max-w-md">
+                        <!-- Custom CSS SVG Corset Drawing (Avoids external broken URLs) -->
+                        <div class="w-full h-80 flex items-center justify-center bg-corset-light/50 rounded-2xl relative overflow-hidden">
+                            <svg class="w-48 h-72 drop-shadow-lg" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Background corset body shadow -->
+                                <path d="M40,20 C40,20 70,30 100,30 C130,30 160,20 160,20 C160,20 170,120 150,180 C135,220 160,270 160,280 C110,290 90,290 40,280 C40,270 65,220 50,180 C30,120 40,20 40,20 Z" fill="#FFC5D3" opacity="0.4"/>
+                                <!-- Main Fabric -->
+                                <path d="M45,25 C65,35 100,35 100,35 C100,35 135,35 155,25 C157,110 148,170 138,210 C128,250 148,275 148,275 C115,282 100,282 100,282 C100,282 85,282 52,275 C52,275 72,250 62,210 C52,170 43,110 45,25 Z" fill="#FFC5D3" stroke="#3D252A" stroke-width="3"/>
+                                <!-- Cups / Bust details -->
+                                <path d="M45,25 C60,55 100,55 100,35 C100,55 140,55 155,25" stroke="#3D252A" stroke-width="2.5" fill="none"/>
+                                <path d="M45,25 C60,5 100,35 100,35" stroke="#3D252A" stroke-dasharray="2 2" fill="none"/>
+                                <path d="M155,25 C140,5 100,35 100,35" stroke="#3D252A" stroke-dasharray="2 2" fill="none"/>
+                                <!-- Steel Boning Lines -->
+                                <line x1="75" y1="35" x2="85" y2="278" stroke="#3D252A" stroke-width="2" stroke-opacity="0.8"/>
+                                <line x1="125" y1="35" x2="115" y2="278" stroke="#3D252A" stroke-width="2" stroke-opacity="0.8"/>
+                                <line x1="100" y1="35" x2="100" y2="282" stroke="#3D252A" stroke-width="3"/>
+                                <line x1="60" y1="30" x2="70" y2="276" stroke="#3D252A" stroke-width="1.5" stroke-dasharray="4 4"/>
+                                <line x1="140" y1="30" x2="130" y2="276" stroke="#3D252A" stroke-width="1.5" stroke-dasharray="4 4"/>
+                                <!-- Ribbon Laces Center -->
+                                <path d="M85,100 L115,120 M115,100 L85,120 M85,140 L115,160 M115,140 L85,160 M85,180 L115,200 M115,180 L85,200 M85,220 L115,240 M115,220 L85,240" stroke="#3D252A" stroke-width="2"/>
+                                <!-- Hanging Lace details -->
+                                <path d="M100,240 Q110,260 105,290 Q120,270 100,240" fill="#3D252A"/>
+                                <path d="M100,240 Q90,260 95,290 Q80,270 100,240" fill="#3D252A"/>
+                            </svg>
+                            <!-- Badge Trend Transformative Teal 2026 Overlay -->
+                            <div class="absolute bottom-4 left-4 bg-corset-accent text-white text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-lg shadow-md font-semibold">
+                                Color WGSN 2026: Teal Accent
+                            </div>
+                        </div>
+
+                        <!-- Mini Floating Stats -->
+                        <div class="mt-4 flex justify-between items-center bg-corset-light p-3 rounded-xl border border-corset-primary/30">
+                            <div class="text-center">
+                                <span class="block font-serif font-bold text-lg text-corset-dark">100%</span>
+                                <span class="text-[9px] uppercase tracking-wider text-slate-500 font-bold">Acero Espiral</span>
+                            </div>
+                            <div class="h-8 w-[1px] bg-corset-primary/50"></div>
+                            <div class="text-center">
+                                <span class="block font-serif font-bold text-lg text-corset-dark">Bespoke</span>
+                                <span class="text-[9px] uppercase tracking-wider text-slate-500 font-bold">Hecho a Medida</span>
+                            </div>
+                            <div class="h-8 w-[1px] bg-corset-primary/50"></div>
+                            <div class="text-center">
+                                <span class="block font-serif font-bold text-lg text-corset-dark">12</span>
+                                <span class="text-[9px] uppercase tracking-wider text-slate-500 font-bold">Tendencias '26</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: BOTÓN MISIÓN Y VISIÓN (Interactive) -->
+    <section id="mision-vision" class="py-16 bg-pattern border-b border-corset-primary/30 scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-xs uppercase tracking-[0.25em] text-corset-accent font-bold block mb-2">Conoce Nuestro ADN</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-corset-dark mb-4">Compromiso de Alta Costura</h2>
+            <p class="text-slate-600 mb-8 max-w-xl mx-auto text-sm sm:text-base">
+                Con más de 30 años en el mundo de la moda, en Rc Boutique transformamos la corsetería tradicional en piezas arquitectónicas de autoexpresión. Haz clic abajo para descubrir nuestro propósito.
+            </p>
+
+            <!-- Main Interactive Selector Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
+                <button onclick="toggleMissionVision('mision')" id="btn-mision" class="w-full py-4 px-6 bg-white hover:bg-corset-primary/20 text-corset-dark font-semibold rounded-2xl shadow-md border-2 border-corset-primary transition-all-300 flex items-center justify-center gap-3">
+                    <span class="p-2 bg-corset-primary rounded-xl text-corset-dark"><i class="fa-solid fa-compass-drafting"></i></span>
+                    Ver Nuestra Misión
+                </button>
+                <button onclick="toggleMissionVision('vision')" id="btn-vision" class="w-full py-4 px-6 bg-white hover:bg-corset-primary/20 text-corset-dark font-semibold rounded-2xl shadow-md border-2 border-transparent hover:border-corset-primary transition-all-300 flex items-center justify-center gap-3">
+                    <span class="p-2 bg-corset-accent/20 rounded-xl text-corset-accent"><i class="fa-regular fa-eye"></i></span>
+                    Ver Nuestra Visión
+                </button>
+            </div>
+
+            <!-- Interactive Dynamic Content Card -->
+            <div class="mt-8 max-w-xl mx-auto bg-white border border-corset-primary/40 rounded-3xl p-6 sm:p-8 shadow-xl transition-all-300 min-h-[180px] flex items-center justify-center" id="mv-card-container">
+                <div id="mv-content-mision" class="space-y-4">
+                    <h3 class="font-serif text-2xl font-bold text-corset-dark flex items-center justify-center gap-2">
+                        Nuestra Misión
+                    </h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        "Diseñar y confeccionar corsets de la más alta calidad con varillas de acero, uniendo la maestría artesanal clásica con las tendencias vanguardistas de 2026. Buscamos brindar un soporte corporal impecable y estético que respete la diversidad de tallas, impulsando la confianza, comodidad y elegancia en cada silueta."
+                    </p>
+                </div>
+                <div id="mv-content-vision" class="space-y-4 hidden">
+                    <h3 class="font-serif text-2xl font-bold text-corset-accent flex items-center justify-center gap-2">
+                        Nuestra Visión
+                    </h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        "Consolidarnos para el 2030 como la marca boutique líder en Sudamérica en corsetería a medida y consumo responsable. Queremos que cada persona redescubra el uso saludable del corset, educando contra mitos y promoviendo la personalización inteligente basada en datos antropométricos."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: SECCIÓN DE MEDIDAS Y TALLAS (Interactive Guide & Calculator) -->
+    <section id="medidas-tallas" class="py-16 bg-white border-b border-corset-primary/20 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs uppercase tracking-[0.25em] text-corset-accent font-bold block mb-2">Ajuste Perfecto Garantizado</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-corset-dark">Encuentra Tu Talla & Estilo Ideal</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">
+                    Un corset de alta calidad con varillas de acero se elige según tus medidas anatómicas, no tu talla de ropa habitual. Usa nuestra calculadora experta interactiva.
+                </p>
+            </div>
+
+            <!-- Interactive Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left: Guide & Sizing Information -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="bg-corset-light/70 border border-corset-primary/30 rounded-3xl p-6 sm:p-8 space-y-6">
+                        <h3 class="font-serif text-2xl font-bold text-corset-dark flex items-center gap-2">
+                            <i class="fa-solid fa-tape text-corset-mid"></i> ¿Cómo tomarte las medidas correctamente?
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-white p-4 rounded-2xl border border-corset-primary/20 relative">
+                                <span class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-corset-primary text-corset-dark font-bold text-xs flex items-center justify-center">1</span>
+                                <h4 class="font-semibold text-sm mt-1 text-corset-dark">Busto / Bajo Busto</h4>
+                                <p class="text-xs text-slate-500 mt-1">Mide justo debajo de tu busto para corsets Underbust, u horizontalmente sobre la parte más prominente para Overbust.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-2xl border border-corset-primary/20 relative">
+                                <span class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-corset-mid text-white font-bold text-xs flex items-center justify-center">2</span>
+                                <h4 class="font-semibold text-sm mt-1 text-corset-dark">Cintura Natural</h4>
+                                <p class="text-xs text-slate-500 mt-1">Mide el punto más estrecho de tu abdomen (generalmente 2 a 3 cm sobre tu ombligo). No metas aire, mantente relajada.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-2xl border border-corset-primary/20 relative">
+                                <span class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-corset-accent text-white font-bold text-xs flex items-center justify-center">3</span>
+                                <h4 class="font-semibold text-sm mt-1 text-corset-dark">Cadera Alta</h4>
+                                <p class="text-xs text-slate-500 mt-1">Mide alrededor de los huesos de tu cadera (unos 10 cm debajo de la cintura natural) para asegurar que el peplum ajuste bien.</p>
+                            </div>
+                        </div>
+
+                        <!-- Error Alert Box: Educational warning based on historical text -->
+                        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-800 flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-600 mt-1 text-base"></i>
+                            <div>
+                                <span class="font-bold">¡Evita el error común del plástico!</span> Las varillas de plástico se doblan y deforman permanentemente con el calor corporal. Rc Boutique utiliza exclusivamente <strong>varillas de acero espiral de doble fila</strong> para un entrenamiento seguro de la cintura (waist training).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Sizing Tool Simulator -->
+                <div class="lg:col-span-5">
+                    <div class="bg-corset-dark text-white rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                        <div class="border-b border-white/10 pb-4">
+                            <h3 class="font-serif text-xl font-bold">Asesor de Medidas Virtual</h3>
+                            <p class="text-xs text-corset-primary/80 mt-1">Ingresa tus datos en centímetros para una recomendación técnica inmediata.</p>
+                        </div>
+
+                        <!-- Calculator Form -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-corset-primary mb-1">Medida de Cintura (cm)</label>
+                                <input type="number" id="calc-waist" placeholder="Ej. 75" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-corset-primary">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-corset-primary mb-1">Medida de Bajo Busto (cm)</label>
+                                <input type="number" id="calc-underbust" placeholder="Ej. 80" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-corset-primary">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-corset-primary mb-1">Medida de Cadera Alta (cm)</label>
+                                <input type="number" id="calc-hips" placeholder="Ej. 95" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-corset-primary">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-corset-primary mb-1">Tu Estilo de Corset Favorito</label>
+                                <select id="calc-style" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-corset-primary">
+                                    <option class="text-corset-dark" value="underbust">Underbust (Bajo pecho - diario/entrenamiento)</option>
+                                    <option class="text-corset-dark" value="overbust">Overbust (Sobre el busto - alta costura)</option>
+                                    <option class="text-corset-dark" value="waspie">Waspie (Cinturilla corta - discreto)</option>
+                                </select>
+                            </div>
+
+                            <button onclick="calculateCorsetSize()" class="w-full bg-corset-primary hover:bg-white text-corset-dark font-bold py-3 px-4 rounded-xl transition-all-300 uppercase tracking-wider text-xs">
+                                <i class="fa-solid fa-calculator mr-2"></i> Calcular Talla Sugerida
+                            </button>
+                        </div>
+
+                        <!-- Calculator Output (Hidden or showing default message) -->
+                        <div id="calc-result" class="hidden bg-white/5 border border-white/10 rounded-2xl p-4 space-y-2">
+                            <span class="text-xs uppercase text-corset-primary font-bold tracking-widest block">Recomendación Oficial:</span>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Talla de Corset Sugerida:</span>
+                                <span class="font-serif text-2xl font-bold text-corset-primary" id="result-size">--</span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-2">
+                                <span class="text-xs">Estilo Recomendado:</span>
+                                <span class="text-xs font-semibold uppercase text-emerald-400" id="result-style">--</span>
+                            </div>
+                            <p class="text-[11px] text-white/70 leading-relaxed mt-2" id="result-note">
+                                Esta talla proporciona una reducción ideal y segura de 10-15 cm con cordones abiertos de inicio.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SECCIÓN DE EMPODERAMIENTO -->
+    <section id="empoderamiento" class="py-20 bg-corset-dark text-white relative overflow-hidden scroll-mt-20">
+        <!-- Abstract design shapes for drama and luxury -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-corset-accent/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-corset-mid/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Aesthetic narrative / Dual romance theme 2026 -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.25em] text-corset-primary font-bold block">Fuerza & Amor Propio</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold leading-tight">
+                        Tu cuerpo es una obra de arte, <span class="italic text-corset-primary">tú tienes el pincel.</span>
+                    </h2>
+                    <p class="text-white/80 leading-relaxed text-sm sm:text-base">
+                        Los corsets de Rc Boutique no buscan encasillarte ni transformar quién eres; son una herramienta física de <strong>empoderamiento y seguridad</strong>. Inspirados en el "romance dual" de la moda 2026, combinamos texturas suaves como el nácar y el encaje con la estructura implacable del acero. 
+                    </p>
+                    <p class="text-white/70 text-sm italic">
+                        "La corsetería es un abrazo de contención estructural que te recuerda la realeza que habita en ti."
+                    </p>
+                    
+                    <!-- Dynamic interactive quote generator for empowerment -->
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 relative">
+                        <p id="empowerment-quote" class="text-sm font-serif italic text-corset-primary">
+                            "La belleza no es encoger tu cuerpo; es expandir tu presencia."
+                        </p>
+                        <button onclick="generateEmpowermentQuote()" class="mt-4 inline-flex items-center text-xs text-white hover:text-corset-primary transition-all-300 font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-wand-magic-sparkles mr-2 animate-bounce"></i> Siguiente Afirmación
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Visual showcase card representing diverse silhouettes and data inclusion -->
+                <div class="lg:col-span-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/10 p-6 rounded-3xl border border-white/10 text-center space-y-2 hover:scale-[1.02] transition-all-300">
+                            <span class="text-3xl text-corset-primary"><i class="fa-solid fa-heart-circle-check"></i></span>
+                            <h4 class="font-serif font-semibold text-lg">Inclusión Sin Barreras</h4>
+                            <p class="text-xs text-white/70">Diseñamos sobre datos antropométricos reales sin importar tu género o talla base.</p>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-3xl border border-white/10 text-center space-y-2 hover:scale-[1.02] transition-all-300">
+                            <span class="text-3xl text-corset-accent"><i class="fa-solid fa-shield-halved"></i></span>
+                            <h4 class="font-serif font-semibold text-lg">Estructura Segura</h4>
+                            <p class="text-xs text-white/70">Varillas de acero con forros de algodón 100% hipoalergénicos para cuidar tu piel.</p>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-3xl border border-white/10 text-center space-y-2 hover:scale-[1.02] transition-all-300">
+                            <span class="text-3xl text-yellow-300"><i class="fa-solid fa-crown"></i></span>
+                            <h4 class="font-serif font-semibold text-lg">Artesanía de Lujo</h4>
+                            <p class="text-xs text-white/70">Cada pieza se corta y ensambla a mano por sastres con décadas de oficio.</p>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-3xl border border-white/10 text-center space-y-2 hover:scale-[1.02] transition-all-300">
+                            <span class="text-3xl text-corset-primary"><i class="fa-solid fa-leaf"></i></span>
+                            <h4 class="font-serif font-semibold text-lg">Slow Fashion</h4>
+                            <p class="text-xs text-white/70">Prendas con propósito diseñadas para durar generaciones, no microtendencias.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: FORMULARIO DE AGENDAMIENTO CON INTEGRACIÓN GOOGLE SIMULADA -->
+    <section id="agendamiento" class="py-16 bg-pattern border-b border-corset-primary/30 scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-xs uppercase tracking-[0.25em] text-corset-accent font-bold block mb-2">Diseño y Sastrería Personal</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-corset-dark">Agenda Tu Cita Exclusiva</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">
+                    Programa una sesión de asesoría virtual o presencial para tomar tus medidas y pre-diseñar el corset de tus sueños. Sincronizado automáticamente con <strong>Google Workspace</strong>.
+                </p>
+            </div>
+
+            <div class="bg-white border-2 border-corset-primary/40 rounded-3xl shadow-xl overflow-hidden">
+                <!-- Google Calendar Style Header -->
+                <div class="bg-corset-accent text-white px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-calendar-days text-2xl"></i>
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider opacity-85 block">Conectado con</span>
+                            <span class="text-sm font-semibold">Google Calendar & Google Forms</span>
+                        </div>
+                    </div>
+                    <span class="text-xs bg-white/20 px-3 py-1 rounded-full font-bold uppercase tracking-wider flex items-center gap-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-ping"></span> Activo
+                    </span>
+                </div>
+
+                <!-- Booking Form Content -->
+                <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="p-6 sm:p-8 space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Nombre Completo *</label>
+                            <input required type="text" id="book-name" placeholder="Tu Nombre y Apellido" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-corset-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Correo Electrónico *</label>
+                            <input required type="email" id="book-email" placeholder="ejemplo@correo.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-corset-accent">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Teléfono Móvil (WhatsApp) *</label>
+                            <input required type="tel" id="book-phone" placeholder="Ej. +57 300 123 4567" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-corset-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Estilo de Corset de Interés *</label>
+                            <select id="book-style" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-corset-accent">
+                                <option value="Underbust de Cintura">Underbust de Cintura (Moda/Diario)</option>
+                                <option value="Overbust de Alta Costura">Overbust de Alta Costura (Boda/Gótico)</option>
+                                <option value="Bespoke Waspie">Bespoke Waspie (Cinturilla corta)</option>
+                                <option value="Faja de Látex / Chaleco">Faja de Látex Deportiva / Chaleco</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Fecha de la Cita *</label>
+                            <input required type="date" id="book-date" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-corset-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Hora de la Cita *</label>
+                            <select required id="book-time" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-corset-accent">
+                                <option value="09:00">09:00 AM - 10:00 AM</option>
+                                <option value="11:00">11:00 AM - 12:00 PM</option>
+                                <option value="14:00">02:00 PM - 03:00 PM</option>
+                                <option value="16:00">04:00 PM - 05:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Instrucciones Especiales del Pedido / Comentarios</label>
+                        <textarea id="book-comments" rows="3" placeholder="Por favor detalla si tienes alguna medida especial, si tienes experiencia previa en waist training o si es tu primera pieza de alta costura." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-corset-accent"></textarea>
+                    </div>
+
+                    <!-- Custom checkbox for Google Calendar sync visualization -->
+                    <div class="bg-corset-light/50 border border-corset-primary/30 p-4 rounded-2xl flex items-center gap-3">
+                        <input type="checkbox" checked id="google-sync-checkbox" class="w-5 h-5 accent-corset-accent rounded focus:ring-corset-accent">
+                        <div class="text-xs">
+                            <span class="font-bold text-corset-dark block">Sincronización Automatizada Activada (Webhook)</span>
+                            <span class="text-slate-500">Al confirmar, enviaremos los datos a Make.com en tiempo real y generaremos un archivo .ics para tu calendario.</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-corset-dark hover:bg-corset-dark/95 text-white font-bold uppercase tracking-widest rounded-2xl transition-all-300 shadow-lg shadow-corset-dark/10 disabled:opacity-70 disabled:cursor-not-allowed">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> Solicitar y Sincronizar Cita
+                    </button>
+                </form>
+
+                <!-- Booking Success Interactive State (Initially hidden) -->
+                <div id="booking-success" class="hidden p-8 text-center space-y-6 bg-white border-t border-corset-primary">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold text-corset-dark">¡Cita Solicitada con Éxito!</h3>
+                        <p class="text-slate-600 text-sm mt-1">Hemos procesado tu información en nuestro sistema integrado.</p>
+                    </div>
+
+                    <!-- Visual Google Sheets Log Container -->
+                    <div class="max-w-md mx-auto bg-slate-50 border border-slate-200 rounded-2xl p-4 text-left text-xs space-y-1 font-mono">
+                        <div class="flex items-center justify-between text-purple-600 border-b border-slate-200 pb-2 mb-2 font-bold uppercase">
+                            <span><i class="fa-solid fa-bolt"></i> Make.com Webhook API</span>
+                            <span>Status: 200 OK</span>
+                        </div>
+                        <div><span class="text-slate-400">ID Cita:</span> <span id="log-id" class="text-corset-accent">--</span></div>
+                        <div><span class="text-slate-400">Cliente:</span> <span id="log-name">--</span></div>
+                        <div><span class="text-slate-400">Servicio:</span> <span id="log-service">--</span></div>
+                        <div><span class="text-slate-400">Horario:</span> <span id="log-datetime" class="font-semibold text-slate-700">--</span></div>
+                        <div class="text-emerald-600 font-semibold pt-1"><i class="fa-solid fa-cloud-arrow-up mr-1 animate-bounce"></i> Datos guardados de forma segura.</div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                        <button onclick="downloadCalendarFile()" class="w-full inline-flex items-center justify-center px-4 py-3 bg-corset-accent hover:bg-corset-accent/95 text-white font-semibold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all-300">
+                            <i class="fa-brands fa-google mr-2"></i> Descargar Google Calendar File
+                        </button>
+                        <button onclick="resetBookingForm()" class="w-full inline-flex items-center justify-center px-4 py-3 bg-corset-light hover:bg-corset-primary/30 text-corset-dark font-semibold text-xs uppercase tracking-wider rounded-xl border border-corset-primary transition-all-300">
+                            Agendar Otra Cita
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: MEDIOS DE COMUNICACIÓN -->
+    <section id="contacto" class="py-16 bg-white scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Channels Block -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.25em] text-corset-accent font-bold block">Canales de Atención</span>
+                    <h2 class="font-serif text-3xl font-bold text-corset-dark">¿Tienes Dudas? Estamos Aquí</h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Nuestro equipo de soporte personalizado de Rc Boutique resolverá cualquier pregunta técnica sobre medidas, envíos o tiempos de confección en minutos.
+                    </p>
+
+                    <!-- Active Channels Interactive Cards -->
+                    <div class="space-y-4">
+                        <!-- Channel 1: Copy-to-clipboard Email -->
+                        <div class="flex items-center gap-4 bg-corset-light/50 border border-corset-primary/30 p-4 rounded-2xl relative group">
+                            <span class="w-12 h-12 bg-white text-corset-mid rounded-xl flex items-center justify-center text-xl shadow-sm">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <div class="flex-1">
+                                <span class="text-[10px] uppercase tracking-wider text-slate-500 font-bold block">Escríbenos</span>
+                                <span id="copy-email-text" class="text-sm font-semibold text-corset-dark">atelier@rcboutique2026.co</span>
+                            </div>
+                            <button onclick="copyToClipboard(' atelier@rcboutique2026.co', 'email-toast')" class="text-xs bg-white border border-corset-primary text-corset-dark px-3 py-1.5 rounded-lg hover:bg-corset-primary transition-all-300">
+                                Copiar
+                            </button>
+                            <!-- Mini Toast absolute warning -->
+                            <div id="email-toast" class="hidden absolute right-4 -top-8 bg-corset-dark text-white text-[10px] py-1 px-3 rounded-md shadow-md animate-bounce">
+                                ¡Copiado!
+                            </div>
+                        </div>
+
+                        <!-- Channel 2: WhatsApp directly link -->
+                        <a href="https://wa.me/573001234567" target="_blank" class="flex items-center gap-4 bg-emerald-50 border border-emerald-100 hover:border-emerald-300 p-4 rounded-2xl transition-all-300 group">
+                            <span class="w-12 h-12 bg-white text-emerald-600 rounded-xl flex items-center justify-center text-xl shadow-sm">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                            <div class="flex-1">
+                                <span class="text-[10px] uppercase tracking-wider text-slate-500 font-bold block">Chat Directo</span>
+                                <span class="text-sm font-semibold text-slate-800">+57 300 123 4567</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-emerald-600 group-hover:translate-x-1 transition-all-300"></i>
+                        </a>
+
+                        <!-- Channel 3: Social Media Grid -->
+                        <div class="bg-corset-light/20 border border-corset-primary/20 p-4 rounded-2xl space-y-3">
+                            <span class="text-[10px] uppercase tracking-wider text-slate-500 font-bold block text-center">Nuestras Redes Oficiales</span>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-white text-pink-600 rounded-full flex items-center justify-center hover:scale-110 transition-all-300 shadow-sm"><i class="fa-brands fa-instagram text-lg"></i></a>
+                                <a href="https://tiktok.com" target="_blank" class="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-all-300 shadow-sm"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                                <a href="https://facebook.com" target="_blank" class="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-all-300 shadow-sm"><i class="fa-brands fa-facebook text-lg"></i></a>
+                                <a href="https://youtube.com" target="_blank" class="w-10 h-10 bg-white text-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-all-300 shadow-sm"><i class="fa-brands fa-youtube text-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Map / Store Locator & Hours -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-6 h-full flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-corset-dark flex items-center gap-2">
+                                <i class="fa-solid fa-location-dot text-corset-accent"></i> Atelier Central & Showroom
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-1">Visítanos bajo previa agenda en el corazón del diseño.</p>
+                        </div>
+
+                        <!-- Simulated Beautiful Map / Location Visual -->
+                        <div class="relative w-full h-48 bg-slate-200 rounded-2xl overflow-hidden border border-slate-300 flex items-center justify-center">
+                            <!-- Abstract Map Background representation -->
+                            <div class="absolute inset-0 opacity-45 bg-pattern"></div>
+                            <!-- Styled Address Tag -->
+                            <div class="relative z-10 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-corset-primary shadow-lg max-w-xs text-center">
+                                <span class="font-serif font-bold text-sm block">Rc Boutique Bogotá Atelier</span>
+                                <span class="text-xs text-slate-500 mt-1 block">Calle 85 # 11 - 53, Zona T, Bogotá, Colombia</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 text-xs pt-4 border-t border-slate-200">
+                            <div>
+                                <span class="font-bold text-slate-700 block uppercase tracking-wider">Horario de Atención</span>
+                                <p class="text-slate-500 mt-1">Lunes a Sábado: 09:00 AM - 07:00 PM</p>
+                                <p class="text-slate-500">Domingos y Festivos: Cerrado</p>
+                            </div>
+                            <div>
+                                <span class="font-bold text-slate-700 block uppercase tracking-wider">Atención Virtual</span>
+                                <p class="text-slate-500 mt-1">24/7 Soporte vía WhatsApp para agendamiento internacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-corset-dark text-white/90 py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <span class="font-serif text-2xl font-bold tracking-tight text-white block">RC BOUTIQUE</span>
+                <p class="text-xs text-white/60 leading-relaxed">
+                    Sastrería tradicional de corsetería auténtica de doble varilla de acero. Diseñados a mano para empoderar cada silueta en toda Colombia.
+                </p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-corset-primary font-bold block mb-3">Colecciones 2026</span>
+                <ul class="text-xs space-y-2 text-white/75">
+                    <li><a href="#" class="hover:text-corset-primary">Romance Dual (Etéreo & Oscuro)</a></li>
+                    <li><a href="#" class="hover:text-corset-primary">Underbust Waist Trainer</a></li>
+                    <li><a href="#" class="hover:text-corset-primary">Lace Addiction Collection</a></li>
+                    <li><a href="#" class="hover:text-corset-primary">Bespoke Bridal Corsets</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-corset-primary font-bold block mb-3">Términos y Guías</span>
+                <ul class="text-xs space-y-2 text-white/75">
+                    <li><a href="#" class="hover:text-corset-primary">Guía Definitiva de Cuidados</a></li>
+                    <li><a href="#" class="hover:text-corset-primary">Políticas de Devoluciones y Cambios</a></li>
+                    <li><a href="#" class="hover:text-corset-primary">Mantenimiento de Varillas de Acero</a></li>
+                    <li><a href="#" class="hover:text-corset-primary">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-corset-primary font-bold block mb-3">Declaración de Responsabilidad</span>
+                <p class="text-[10px] text-white/50 leading-relaxed">
+                    El entrenamiento de cintura (tightlacing) debe realizarse con conocimiento, paciencia y con piezas adecuadas. Rc Boutique promueve exclusivamente el uso de corsets con fines estéticos y de postura de forma saludable y responsable.
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-white/10 text-center text-xs text-white/45 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <span>© 2026 Rc Boutique. Todos los derechos reservados. Moda premium elaborada a medida.</span>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline">Privacidad</a>
+                <span>•</span>
+                <a href="#" class="hover:underline">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Reactive state representation
+        const store = {
+            currentMVTab: 'mision',
+            lastCalculatedSize: null,
+            bookingData: null
+        };
+
+        // 1. Mission and Vision Toggle Interactivity
+        function toggleMissionVision(tab) {
+            store.currentMVTab = tab;
+            
+            const btnMision = document.getElementById('btn-mision');
+            const btnVision = document.getElementById('btn-vision');
+            const contentMision = document.getElementById('mv-content-mision');
+            const contentVision = document.getElementById('mv-content-vision');
+
+            if (tab === 'mision') {
+                btnMision.classList.add('border-corset-primary');
+                btnMision.classList.remove('border-transparent');
+                btnVision.classList.remove('border-corset-primary');
+                btnVision.classList.add('border-transparent');
+                
+                contentMision.classList.remove('hidden');
+                contentVision.classList.add('hidden');
+            } else {
+                btnVision.classList.add('border-corset-primary');
+                btnVision.classList.remove('border-transparent');
+                btnMision.classList.remove('border-corset-primary');
+                btnMision.classList.add('border-transparent');
+                
+                contentVision.classList.remove('hidden');
+                contentMision.classList.add('hidden');
+            }
+        }
+
+        // 2. Size Calculator Logic
+        function calculateCorsetSize() {
+            const waist = parseFloat(document.getElementById('calc-waist').value);
+            const underbust = parseFloat(document.getElementById('calc-underbust').value);
+            const hips = parseFloat(document.getElementById('calc-hips').value);
+            const style = document.getElementById('calc-style').value;
+
+            // Custom modal notification if inputs are missing instead of browser alert()
+            if (!waist || !underbust || !hips) {
+                showToastNotification("Por favor, introduce todas las medidas requeridas.", "warning");
+                return;
+            }
+
+            // Calculation based on traditional steel-boned corsetry standard:
+            // High-quality steel corsets are selected 4 to 6 inches (10 to 15 cm) smaller than actual waist size.
+            let sizeWaistCm = waist - 12; // Moderate reduction
+            let sizeInInches = Math.round(sizeWaistCm / 2.54);
+
+            // Ensure we recommend an even size (standard in authentic corsetry: 20", 22", 24", 26", etc.)
+            if (sizeInInches % 2 !== 0) {
+                sizeInInches -= 1;
+            }
+
+            // Clamping safe limits
+            if (sizeInInches < 18) sizeInInches = 18;
+            if (sizeInInches > 42) sizeInInches = 42;
+
+            // Output Rendering
+            const resultBox = document.getElementById('calc-result');
+            const resultSize = document.getElementById('result-size');
+            const resultStyle = document.getElementById('result-style');
+            
+            resultSize.textContent = sizeInInches + '"' + ` (${Math.round(sizeInInches * 2.54)} cm)`;
+            resultStyle.textContent = style;
+            
+            resultBox.classList.remove('hidden');
+            
+            // Scroll smoothly slightly down inside block
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            showToastNotification("¡Talla calculada con éxito!", "success");
+        }
+
+        // 3. Empowerment Quotes Generator
+        const inspiringQuotes = [
+            "La belleza no es encoger tu cuerpo; es expandir tu presencia.",
+            "Tu silueta es tu lienzo. Vístete con poder, fuerza y el romance dual de tu propia alma.",
+            "Una postura firme no limita tu respiración; expande tu realeza interior.",
+            "Amor propio es vestirse a la medida de tu poder, no de los estándares ajenos.",
+            "Varillas de acero para sostener tu fuerza; encajes suaves para cobijar tu dulzura.",
+            "En el 2026, la silueta ceñida no es prisión, es armadura de alta costura.",
+            "Tus curvas no necesitan corrección; merecen admiración estructural hecha a mano."
+        ];
+
+        function generateEmpowermentQuote() {
+            const qEl = document.getElementById('empowerment-quote');
+            let current = qEl.textContent;
+            let randomQuote = current;
+            while (randomQuote === current) {
+                const randomIndex = Math.floor(Math.random() * inspiringQuotes.length);
+                randomQuote = `"${inspiringQuotes[randomIndex]}"`;
+            }
+            qEl.textContent = randomQuote;
+        }
+
+        // 4. Booking and Real Webhook Synchronization
+        async function handleBookingSubmit(event) {
+            event.preventDefault();
+
+            // Deshabilitar el botón y mostrar estado de carga
+            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const originalBtnContent = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin mr-2"></i> Procesando...';
+            submitBtn.disabled = true;
+
+            const name = document.getElementById('book-name').value;
+            const email = document.getElementById('book-email').value;
+            const phone = document.getElementById('book-phone').value;
+            const style = document.getElementById('book-style').value;
+            const date = document.getElementById('book-date').value;
+            const time = document.getElementById('book-time').value;
+            const comments = document.getElementById('book-comments').value;
+
+            // Store state
+            const appointmentId = "APT-" + Math.floor(100000 + Math.random() * 900000);
+            store.bookingData = {
+                id: appointmentId,
+                name: name,
+                email: email,
+                phone: phone,
+                style: style,
+                date: date,
+                time: time,
+                comments: comments
+            };
+
+            // Real Make.com Webhook Integration
+            const webhookUrl = "https://hook.us2.make.com/w75akvqug3c9h2bkgixlfumk2skne3ct";
+            
+            try {
+                // Enviar la petición POST al Webhook
+                await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(store.bookingData)
+                });
+                console.log("Datos enviados exitosamente a Make.com");
+            } catch (error) {
+                console.error("Error enviando al webhook:", error);
+                showToastNotification("El webhook tardó en responder, pero tu cita fue registrada.", "warning");
+            }
+
+            // Restaurar el botón a su estado normal
+            submitBtn.innerHTML = originalBtnContent;
+            submitBtn.disabled = false;
+
+            // Switch layout to success screen
+            document.getElementById('booking-form').classList.add('hidden');
+            const successEl = document.getElementById('booking-success');
+            successEl.classList.remove('hidden');
+
+            // Render log simulation values
+            document.getElementById('log-id').textContent = appointmentId;
+            document.getElementById('log-name').textContent = name;
+            document.getElementById('log-service').textContent = `Asesoría: ${style}`;
+            document.getElementById('log-datetime').textContent = `${date} a las ${time}`;
+
+            showToastNotification("Cita procesada y enviada a Make.com", "success");
+        }
+
+        // Generates and triggers real download of standard Calendar .ics file
+        function downloadCalendarFile() {
+            if (!store.bookingData) return;
+
+            const d = store.bookingData;
+            // Parse date to basic ics date format (YYYYMMDD)
+            const cleanedDate = d.date.replace(/-/g, "");
+            
+            // Simple robust mock ICS format string
+            const icsContent = 
+`BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Rc Boutique 2026//NONSGML Corset Appointment//ES
+BEGIN:VEVENT
+UID:${d.id}@rcboutique.co
+DTSTAMP:${cleanedDate}T090000Z
+DTSTART:${cleanedDate}T${d.time.replace(/:/g, "")}00Z
+DURATION:PT1H
+SUMMARY:Asesoría Corset Custom - ${d.name}
+DESCRIPTION:Cita de diseño personalizado de Corset para ${d.name}. Estilo de interés: ${d.style}. Comentarios: ${d.comments}
+LOCATION:Atelier de Rc Boutique Bogotá / Google Meet Online
+END:VEVENT
+END:VCALENDAR`;
+
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.setAttribute("href", url);
+            link.setAttribute("download", `Cita_RcBoutique_${d.id}.ics`);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            showToastNotification("Se descargó el archivo compatible con Google Calendar.", "success");
+        }
+
+        function resetBookingForm() {
+            document.getElementById('booking-form').reset();
+            document.getElementById('booking-form').classList.remove('hidden');
+            document.getElementById('booking-success').classList.add('hidden');
+            store.bookingData = null;
+        }
+
+        // 5. Global Helpers
+        function copyToClipboard(text, toastId) {
+            const tempEl = document.createElement("textarea");
+            tempEl.value = text.trim();
+            document.body.appendChild(tempEl);
+            tempEl.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempEl);
+
+            const toast = document.getElementById(toastId);
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 2500);
+        }
+
+        // In-App Modern Toast System (Alternative to standard alert/confirm)
+        function showToastNotification(message, type = "success") {
+            const toastContainerId = "global-toast-container";
+            let container = document.getElementById(toastContainerId);
+            if (!container) {
+                container = document.createElement("div");
+                container.id = toastContainerId;
+                container.className = "fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-sm";
+                document.body.appendChild(container);
+            }
+
+            const toast = document.createElement("div");
+            const bgClass = type === "warning" ? "bg-amber-500" : "bg-corset-dark";
+            toast.className = `${bgClass} text-white px-5 py-3 rounded-2xl shadow-xl flex items-center justify-between text-xs gap-3 transform translate-y-2 opacity-0 transition-all duration-300`;
+            toast.innerHTML = `
+                <div class="flex items-center gap-2">
+                    <i class="${type === 'warning' ? 'fa-solid fa-circle-exclamation' : 'fa-solid fa-circle-check'} text-base"></i>
+                    <span>${message}</span>
+                </div>
+                <button onclick="this.parentElement.remove()" class="text-white/70 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            `;
+
+            container.appendChild(toast);
+            
+            // Trigger animation
+            setTimeout(() => {
+                toast.classList.remove('translate-y-2', 'opacity-0');
+            }, 10);
+
+            // Auto dismiss
+            setTimeout(() => {
+                toast.classList.add('translate-y-2', 'opacity-0');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
